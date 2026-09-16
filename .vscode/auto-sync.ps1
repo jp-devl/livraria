@@ -3,6 +3,12 @@ $ErrorActionPreference = "Stop"
 $repositoryPath = Split-Path -Parent $PSScriptRoot
 Set-Location $repositoryPath
 
+$syncMutex = New-Object System.Threading.Mutex($false, "LivrariaAutoSync")
+if (-not $syncMutex.WaitOne(0)) {
+    Write-Host "Auto-sync ja esta em execucao para este projeto."
+    exit
+}
+
 Write-Host "Auto-sync ativo para $repositoryPath"
 
 $lastSnapshot = ""
@@ -16,7 +22,7 @@ function Update-ReadmeHistory {
     $readmeContent = if (Test-Path $readmePath) { Get-Content $readmePath -Raw } else { "# Livraria`r`n" }
     $changedFiles = $StatusLines | ForEach-Object {
         if ($_.Length -gt 3) { $_.Substring(3).Trim() }
-    } | Where-Object { $_ -and $_ -ne "Readme.md" } | Sort-Object -Unique
+    } | Where-Object { $_ } | Sort-Object -Unique
 
     $historyLines = @(
         $historyStart
