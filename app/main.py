@@ -6,6 +6,7 @@ from app.routers.livros import livros
 from app.database.connection import engine
 from app.database.models import Base
 
+Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 app.include_router(livros.router)
