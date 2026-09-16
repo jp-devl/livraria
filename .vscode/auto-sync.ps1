@@ -27,7 +27,7 @@ function Update-ReadmeHistory {
     )
 
     if ($changedFiles) {
-        $historyLines += $changedFiles | ForEach-Object { "- `$_`" }
+        $historyLines += $changedFiles | ForEach-Object { "- " + '`' + $_ + '`' }
     }
     else {
         $historyLines += "- Nenhum arquivo adicional detectado."
