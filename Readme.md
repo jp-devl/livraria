@@ -145,6 +145,13 @@ Contribuições são bem-vindas. Para colaborar:
 
 Este projeto está licenciado sob a licença MIT.
 
+<!-- AUTO-SYNC-HISTORY-START -->
+## Histórico de alterações
+
+O histórico abaixo é atualizado automaticamente pelo monitor do VS Code antes de cada sincronização.
+
+<!-- AUTO-SYNC-HISTORY-END -->
+
 ## Contato
 
 Se tiver dúvidas ou sugestões, entre em contato com o responsável do projeto.
