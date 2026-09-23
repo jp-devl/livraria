@@ -1,8 +1,10 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from app.schemas.livro import LivroSchema
 from app.database.connection import SessionLocal
 from app.database.models import LivroModel
 from app.schemas.livro import LivroCreate
+from app.database.connection import get_db
+from app.services import livro_service
 
 
 router = APIRouter(
@@ -14,11 +16,10 @@ router = APIRouter(
 
 #listar-livros
 @router.get("/")
-async def listar_livros():
-    db = SessionLocal()
-    livros = db.query(LivroModel).all()
-    db.close()
-    return {"livros": livros}
+async def listar_livros(
+    db:Session = Depends(get_db)
+):
+
 
 
 
