@@ -1,5 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from app.schemas.livro import LivroSchema
+from app.database.connection import SessionLocal
+from app.database.models import LivroModel
+from app.schemas.livro import LivroCreate
+
 
 router = APIRouter(
     prefix="/livros",
@@ -8,26 +12,30 @@ router = APIRouter(
 
 
 
-#Banco de Dados em memória
-Livros = [
-    LivroSchema(id=1, titulo="Hobbit", autor="J.R.R. Tolkien", 
-                 ano_publicacao=1937),
-    LivroSchema(id=2, titulo="Senhor dos Anéis", 
-                autor="J.R.R. Tolkien", ano_publicacao=1954),
-]
-
 #listar-livros
 @router.get("/")
 async def listar_livros():
-    return {"livros": Livros}
+    db = SessionLocal()
+    livros = db.query(LivroModel).all()
+    db.close()
+    return {"livros": livros}
+
 
 
 #adicionar-livro
 @router.post("/")
-async def adicionar_livro(livro: str):
-    Livros.append(livro)
+async def adicionar_livro(livro: LivroCreate):
+    db = SessionLocal()
+    novo_livro = LivroModel(
+        titulo=livro.titulo,
+        autor=livro.autor,
+        ano_publicacao=livro.ano_publicacao
+    )
+    db.add(novo_livro)
+    db.commit()
+    db.refresh(novo_livro)
+    db.close()
     return {"message": "Livro adicionado com sucesso!"}
-
 
 #atualizar-livro
 @router.put("/{index}")

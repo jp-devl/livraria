@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
 
-class Livro(Base):
+class LivroModel(Base):
     __tablename__ = "livros"
 
     id = Column(Integer, primary_key=True)

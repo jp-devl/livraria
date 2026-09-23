@@ -1,14 +1,13 @@
 from fastapi import FastAPI, HTTPException
 from app.schemas.livro import LivroSchema
-from app.routers.livros import router
-
+from app.routers import livros
 from app.database.connection import engine
 from app.database.models import Base
 
 Base.metadata.create_all(bind=engine) 
 app = FastAPI()
 
-app.include_router(router)
+app.include_router(livros.router)
 
 
 #rota-inicial

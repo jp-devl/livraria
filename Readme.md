@@ -1,10 +1,10 @@
-# Livraria
+﻿# Livraria
 
-Aplicação web para gerenciamento de uma livraria, com foco em cadastro de livros, autores, categorias, clientes e vendas.
+AplicaÃ§Ã£o web para gerenciamento de uma livraria, com foco em cadastro de livros, autores, categorias, clientes e vendas.
 
-## Visão geral
+## VisÃ£o geral
 
-Esta aplicação foi desenvolvida para facilitar o controle do catálogo de livros e o processo de venda em uma livraria, oferecendo uma interface simples e intuitiva para administração do estoque e operações do negócio.
+Esta aplicaÃ§Ã£o foi desenvolvida para facilitar o controle do catÃ¡logo de livros e o processo de venda em uma livraria, oferecendo uma interface simples e intuitiva para administraÃ§Ã£o do estoque e operaÃ§Ãµes do negÃ³cio.
 
 ## Funcionalidades
 
@@ -13,46 +13,46 @@ Esta aplicação foi desenvolvida para facilitar o controle do catálogo de livr
 - Cadastro de autores e categorias
 - Cadastro de clientes
 - Registro de vendas
-- Consulta de histórico de pedidos
-- Painel administrativo para gestão rápida
-- Validação de formulário e feedback visual
+- Consulta de histÃ³rico de pedidos
+- Painel administrativo para gestÃ£o rÃ¡pida
+- ValidaÃ§Ã£o de formulÃ¡rio e feedback visual
 
 ## Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
-- Node.js (se aplicável)
+- Node.js (se aplicÃ¡vel)
 - React / Vue / Angular (ajuste conforme o projeto)
 - Banco de dados relacional ou NoSQL (ajuste conforme o projeto)
 - Bootstrap / Tailwind / Material UI (ajuste conforme o projeto)
 
-## Pré-requisitos
+## PrÃ©-requisitos
 
 Antes de iniciar, certifique-se de ter instalado:
 
 - Node.js 18 ou superior
 - npm ou yarn
-- Banco de dados configurado (se a aplicação usar persistência)
+- Banco de dados configurado (se a aplicaÃ§Ã£o usar persistÃªncia)
 
-## Instalação
+## InstalaÃ§Ã£o
 
-1. Clone o repositório:
+1. Clone o repositÃ³rio:
 
    ```bash
    git clone https://github.com/seu-usuario/livraria.git
    cd livraria
    ```
 
-2. Instale as dependências:
+2. Instale as dependÃªncias:
 
    ```bash
    npm install
    ```
 
-3. Configure as variáveis de ambiente:
+3. Configure as variÃ¡veis de ambiente:
 
-   Crie um arquivo `.env` na raiz do projeto e defina as configurações necessárias, por exemplo:
+   Crie um arquivo `.env` na raiz do projeto e defina as configuraÃ§Ãµes necessÃ¡rias, por exemplo:
 
    ```env
    PORT=3000
@@ -62,7 +62,7 @@ Antes de iniciar, certifique-se de ter instalado:
    DB_NAME=livraria
    ```
 
-4. Inicie a aplicação:
+4. Inicie a aplicaÃ§Ã£o:
 
    ```bash
    npm run dev
@@ -78,21 +78,21 @@ Antes de iniciar, certifique-se de ter instalado:
 
 ```text
 livraria/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── models/
-│   ├── routes/
-│   └── App.js
-├── public/
-├── .env
-├── package.json
-├── README.md
-└── server.js
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ pages/
+â”‚   â”œâ”€â”€ services/
+â”‚   â”œâ”€â”€ models/
+â”‚   â”œâ”€â”€ routes/
+â”‚   â””â”€â”€ App.js
+â”œâ”€â”€ public/
+â”œâ”€â”€ .env
+â”œâ”€â”€ package.json
+â”œâ”€â”€ README.md
+â””â”€â”€ server.js
 ```
 
-## Scripts disponíveis
+## Scripts disponÃ­veis
 
 ```bash
 npm run dev
@@ -103,37 +103,37 @@ npm run test
 
 ## Como usar
 
-- Acesse a área administrativa para cadastrar livros e categorias.
-- Registre clientes e acompanhe o histórico de compras.
+- Acesse a Ã¡rea administrativa para cadastrar livros e categorias.
+- Registre clientes e acompanhe o histÃ³rico de compras.
 - Atualize o estoque conforme recebimento e vendas.
 - Utilize a funcionalidade de vendas para registrar pedidos com rapidez.
 
 ## Fluxo principal
 
 1. Cadastro de livros e autores
-2. Organização por categorias
+2. OrganizaÃ§Ã£o por categorias
 3. Registro de clientes
-4. Emissão de vendas
-5. Controle de estoque e relatórios
+4. EmissÃ£o de vendas
+5. Controle de estoque e relatÃ³rios
 
-## Contribuição
+## ContribuiÃ§Ã£o
 
-Contribuições são bem-vindas. Para colaborar:
+ContribuiÃ§Ãµes sÃ£o bem-vindas. Para colaborar:
 
-1. Faça um fork do projeto
+1. FaÃ§a um fork do projeto
 2. Crie uma branch para sua feature:
 
    ```bash
    git checkout -b feature/nova-funcionalidade
    ```
 
-3. Faça commit das alterações:
+3. FaÃ§a commit das alteraÃ§Ãµes:
 
    ```bash
    git commit -m "Adiciona nova funcionalidade"
    ```
 
-4. Envie para o repositório remoto:
+4. Envie para o repositÃ³rio remoto:
 
    ```bash
    git push origin feature/nova-funcionalidade
@@ -141,17 +141,24 @@ Contribuições são bem-vindas. Para colaborar:
 
 5. Abra um pull request
 
-## Licença
+## LicenÃ§a
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto estÃ¡ licenciado sob a licenÃ§a MIT.
 
 <!-- AUTO-SYNC-HISTORY-START -->
-## Histórico de alterações
+## HistÃ³rico de alteraÃ§Ãµes
 
-O histórico abaixo é atualizado automaticamente pelo monitor do VS Code antes de cada sincronização.
+Ãšltima sincronizaÃ§Ã£o automÃ¡tica: 2026-09-22 21:31:40
 
+- `app/database/connection.py`
+- `app/database/models.py`
+- `app/main.py`
+- `app/routers/livros.py`
+- `app/schemas/livro.py`
+- `livraria.db`
 <!-- AUTO-SYNC-HISTORY-END -->
 
 ## Contato
 
-Se tiver dúvidas ou sugestões, entre em contato com o responsável do projeto.
+Se tiver dÃºvidas ou sugestÃµes, entre em contato com o responsÃ¡vel do projeto.
+
