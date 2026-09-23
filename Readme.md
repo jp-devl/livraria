@@ -148,13 +148,14 @@ Este projeto estÃ¡ licenciado sob a licenÃ§a MIT.
 <!-- AUTO-SYNC-HISTORY-START -->
 ## HistÃ³rico de alteraÃ§Ãµes
 
-Ãšltima sincronizaÃ§Ã£o automÃ¡tica: 2026-09-22 21:33:28
+Ãšltima sincronizaÃ§Ã£o automÃ¡tica: 2026-09-22 21:35:21
 
-- `app/database/connection.py`
+- `app/services/`
 <!-- AUTO-SYNC-HISTORY-END -->
 
 ## Contato
 
 Se tiver dÃºvidas ou sugestÃµes, entre em contato com o responsÃ¡vel do projeto.
+
 
 
