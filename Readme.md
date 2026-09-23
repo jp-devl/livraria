@@ -148,17 +148,13 @@ Este projeto estÃ¡ licenciado sob a licenÃ§a MIT.
 <!-- AUTO-SYNC-HISTORY-START -->
 ## HistÃ³rico de alteraÃ§Ãµes
 
-Ãšltima sincronizaÃ§Ã£o automÃ¡tica: 2026-09-22 21:31:40
+Ãšltima sincronizaÃ§Ã£o automÃ¡tica: 2026-09-22 21:33:28
 
 - `app/database/connection.py`
-- `app/database/models.py`
-- `app/main.py`
-- `app/routers/livros.py`
-- `app/schemas/livro.py`
-- `livraria.db`
 <!-- AUTO-SYNC-HISTORY-END -->
 
 ## Contato
 
 Se tiver dÃºvidas ou sugestÃµes, entre em contato com o responsÃ¡vel do projeto.
+
 
