@@ -19,6 +19,7 @@ router = APIRouter(
 async def listar_livros(
     db:Session = Depends(get_db)
 ):
+    return livro_service.listar_livros(db)
 
 
 
